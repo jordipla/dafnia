@@ -1,18 +1,16 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' This function creates a plot with red dots
+#'
+#' This function is amazing and beautiful
+#' @param x is a vector or dataframe
+#' @param y is a vector or dataframe
+#' @return  Creates a plot with red dots
+#' @examples redplot(x=iris$Petal.Length, y=iris$Petal.Width)
+#' @export
 
-hello <- function() {
-  print("Hello, world!")
+
+redplot <- function(x, y, col="red") {
+  plot(x=x, y=y, col=col)
 }
+
+
+
